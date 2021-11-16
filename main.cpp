@@ -6,8 +6,8 @@ using namespace std;
 void max_sum_div()
 {
     /**
-    1. Считать числа
-    2. Вывести все пары
+    1. Считать числа+
+    2. Вывести все пары+
     3. Вместо пары - суммы
     4. делимость сумм
     5. Только наибольшая сумма
@@ -18,8 +18,12 @@ void max_sum_div()
     for(int i(0);i<n;i++)
         cin >> numbers[i];
     cout << endl;
-    for (int i(0);i<n;i++)
-    cout << numbers[i] << " ";
+    for(int j(0); j<n-1; j++)
+            for (int i(j+1); i<n; i++)
+            {
+                cout<< numbers[j] << " " << numbers[i] << endl;
+            }
+
 
 }
 
