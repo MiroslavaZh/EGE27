@@ -18,10 +18,24 @@ for (int i(0); i<n; i++)
     if (max_nech!=-1001 and max_ch!=-1001) cout << max_nech+max_ch << endl;
     else cout << -1 << endl;
 }
+void max_sum_div_eff()
+{
+    /**
+       1. Вывести остатки от деления на 40+
+       2.
+    */
+
+    vector<int> ost_mod_40(40, 0);
+    int n(0);
+    cin >> n;
+    ost_mod_40[n%40]++;
+    for (int i(0); i<ost_mod_40.size(); i++)
+        cout << i << ":" << ost_mod_40[i] << endl;
+}
 
 
 int main()
 {
-    max_sum_div();
+    max_sum_div_eff();
     return 0;
 }
