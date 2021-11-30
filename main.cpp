@@ -9,7 +9,7 @@ void min_sum_dist()
     2. ¬ывести пары+
     3. пары с минимальным рассто€нием+
     4. посчитать сумму вместо пар+
-    5. вывести минимум среди сум
+    5. вывести минимум среди сум+
 
     **/
 
@@ -19,19 +19,16 @@ cin >> n;
 vector<int> numbers(n,0);
     for (int i(0); i<n; i++)
         cin >> numbers[i];
-    int min_sum(0);
+    int min_sum(2001);
     for(int j(0); j<n-1; j++)
         for (int i(j+3); i<n; i++)
         {
            int cur_num(numbers[j]+numbers[i]);
-           min_sum=cur_num;
-           cout << min_sum << endl;
+           if (cur_num < min_sum)
+                min_sum=cur_num;
+
         }
-
-
-          /** if (cur_num < min_sum)
-                max_sum=cur_num; **/
-
+    cout << min_sum << endl;
 }
 
 int main()
