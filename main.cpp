@@ -21,7 +21,7 @@ vector<int> numbers(n,0);
         cin >> numbers[i];
     int min_sum(2001);
     for(int j(0); j<n-1; j++)
-        for (int i(j+3); i<n; i++)
+        for (int i(j+4); i<n; i++)
         {
            int cur_num(numbers[j]+numbers[i]);
            if (cur_num < min_sum)
