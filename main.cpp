@@ -7,8 +7,8 @@ void min_sum_dist()
     /**
     1. Считать числа+
     2. Вывести пары+
-    3. пары с минимальным расстоянием
-    4. посчитать сумму вместо пар
+    3. пары с минимальным расстоянием+
+    4. посчитать сумму вместо пар+
     5. вывести минимум среди сум
 
     **/
@@ -22,10 +22,15 @@ vector<int> numbers(n,0);
     int min_sum(0);
     for(int j(0); j<n-1; j++)
         for (int i(j+3); i<n; i++)
-            cout << numbers[j] << " " << numbers[i] << endl;
-             /**int cur_num(numbers[j]+numbers[i]);
-           if (cur_num < min_sum)
-                max_sum=cur_num;**/
+        {
+           int cur_num(numbers[j]+numbers[i]);
+           min_sum=cur_num;
+           cout << min_sum << endl;
+        }
+
+
+          /** if (cur_num < min_sum)
+                max_sum=cur_num; **/
 
 }
 
