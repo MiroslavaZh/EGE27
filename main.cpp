@@ -24,7 +24,7 @@ void max_pr_div()
             for (int i(j+1); i<n; i++)
                 for (int k(i+1); k<n;k++)
                 {
-                int cur_num(numbers[j]*numbers[i]*numbers[i]);
+                int cur_num(numbers[j]*numbers[i]*numbers[k]);
                 if (cur_num%4==0 and cur_num>max_pr)
                     max_pr=cur_num;
                 }
